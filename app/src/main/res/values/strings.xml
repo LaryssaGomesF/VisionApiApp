@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VisionApiApp</string>
+    <string name="description_foating_action_button_home">options</string>
+    <string name="open_barcode_scanner">Open barcode scanner</string>
 </resources>
