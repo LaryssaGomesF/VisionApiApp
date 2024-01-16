@@ -44,4 +44,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //KOIN
+    implementation("io.insert-koin:koin-android:3.5.3")
+
+    //BARCODE
+    implementation("com.google.mlkit:barcode-scanning:17.2.0")
 }
