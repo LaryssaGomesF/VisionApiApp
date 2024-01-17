@@ -6,9 +6,6 @@ import org.koin.dsl.module
 
 val modulesApp = module {
 
-
-    viewModel { BarcodeViewModel() }
-
     viewModel { HomeViewModel() }
 
 }
