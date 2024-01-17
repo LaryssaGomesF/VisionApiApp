@@ -1,11 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
     namespace = "com.example.visionapiapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.visionapiapp"
@@ -33,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,4 +48,23 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //KOIN
+    implementation("io.insert-koin:koin-android:3.5.3")
+
+    //BARCODE
+    implementation("com.google.mlkit:barcode-scanning:17.0.3")
+
+    //NAVIGATION
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+
+    //CAMERAX
+    implementation("androidx.camera:camera-camera2:1.2.1")
+    implementation("androidx.camera:camera-lifecycle:1.2.1")
+    implementation("androidx.camera:camera-view:1.2.1")
+
+    //BARCODE SCANNER
+    implementation("com.google.mlkit:barcode-scanning:17.2.0")
+
 }
