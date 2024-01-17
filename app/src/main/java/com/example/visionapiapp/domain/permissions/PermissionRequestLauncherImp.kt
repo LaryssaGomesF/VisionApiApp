@@ -2,13 +2,13 @@ package com.example.visionapiapp.domain.permissions
 
 import androidx.activity.result.ActivityResultLauncher
 
-class PermissionRequestLauncherImp(
 
+class PermissionRequestLauncherImp(
+    private val permissions: Array<String>,
+    private val activityResultLauncher: ActivityResultLauncher<Array<String>>
 ) : PermissionRequestLauncher {
-    override fun launchPermission(
-        permissions: Array<String>,
-        activityResultLauncher: ActivityResultLauncher<Array<String>>
-    ) {
+    override fun launchPermission() {
         activityResultLauncher.launch(permissions)
     }
 }
+
