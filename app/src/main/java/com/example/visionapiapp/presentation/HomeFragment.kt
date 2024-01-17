@@ -21,9 +21,9 @@ class HomeFragment : Fragment() {
 
     private val cameraPermission =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { accepted ->
-            if(accepted){
+            if (accepted) {
                 viewModel.onCameraPermissionUpdated(PermissionStatus.Granted)
-            }else{
+            } else {
                 viewModel.onCameraPermissionUpdated(PermissionStatus.Denied)
             }
 

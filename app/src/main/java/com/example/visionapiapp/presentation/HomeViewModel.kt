@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.example.visionapiapp.domain.permissions.PermissionStatus
 import com.example.visionapiapp.domain.permissions.PickImagesActions
 
-class HomeViewModel: ViewModel() {
+class HomeViewModel : ViewModel() {
 
     private val _action: MutableLiveData<PickImagesActions> = MutableLiveData()
     val action: LiveData<PickImagesActions> = _action

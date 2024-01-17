@@ -1,7 +1,7 @@
 package com.example.visionapiapp.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.visionapiapp.R
 
 class MainActivity : AppCompatActivity() {

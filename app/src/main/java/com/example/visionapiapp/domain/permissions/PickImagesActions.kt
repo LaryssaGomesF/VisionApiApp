@@ -1,7 +1,5 @@
 package com.example.visionapiapp.domain.permissions
 
-import android.net.Uri
-
 sealed class PickImagesActions {
 
 
